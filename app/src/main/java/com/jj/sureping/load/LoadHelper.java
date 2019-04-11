@@ -82,8 +82,7 @@ public class LoadHelper<CL extends Context & LifecycleOwner> implements Lifecycl
             rootView.addView(loading);
             return loading;
         } else {
-            rootView.removeView(loading);
-            loading = null;
+            onCancel();
             return inflate(layoutId);
         }
     }
