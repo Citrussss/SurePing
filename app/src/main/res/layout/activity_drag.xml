@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.jj.sureping.drag.DragGroupLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_margin="50dp"
+            android:background="#00BCD4"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:background="#4CAF50"
+            android:layout_height="50dp" />
+    </com.jj.sureping.drag.DragGroupLayout>
+</LinearLayout>

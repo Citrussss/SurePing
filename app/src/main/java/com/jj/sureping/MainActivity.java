@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.jj.sureping.drag.DragActivity;
 import com.jj.sureping.load.LoadingActivity;
 import com.jj.sureping.slide.SlidingActivity;
 
@@ -23,16 +24,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent intent;
+        Intent intent =null;
         switch (view.getId()) {
             case R.id.slide:
                 intent = new Intent(this, SlidingActivity.class);
-                startActivity(intent);
                 break;
             case R.id.load:
                 intent = new Intent(this, LoadingActivity.class);
-                startActivity(intent);
+                break;
+            case R.id.drag:
+                intent = new Intent(this, DragActivity.class);
                 break;
         }
+        startActivity(intent);
     }
 }
