@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,4 +31,12 @@
             android:layout_height="wrap_content"
             android:text="拖拽" />
     </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dialog"
+        android:layout_width="wrap_content"
+        android:onClick="onClick"
+        android:layout_gravity="bottom|end"
+        android:elevation="12dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_height="wrap_content" />
 </FrameLayout>
