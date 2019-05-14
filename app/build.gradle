@@ -34,5 +34,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation project(path: ':biscuits')
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.haibin:calendarview:3.5.3'
 
 }

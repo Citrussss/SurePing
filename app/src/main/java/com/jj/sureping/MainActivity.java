@@ -3,12 +3,14 @@ package com.jj.sureping;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupWindow;
 
 import com.jj.sureping.drag.DragActivity;
 import com.jj.sureping.load.LoadingActivity;
+import com.jj.sureping.paint.PaintTextActivity;
 import com.jj.sureping.slide.SlidingActivity;
 import com.sureping.biscuits.dialog.IosListPopWindowBuilder;
 import com.sureping.biscuits.dialog.MyAlertDialogFragment;
@@ -42,9 +44,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.dialog:
                 PopupWindow popupWindow = IosListPopWindowBuilder.build(this);
-
                 break;
-
+            case R.id.text:
+                intent = new Intent(this, PaintTextActivity.class);
+                break;
         }
         if (intent !=null)
         startActivity(intent);

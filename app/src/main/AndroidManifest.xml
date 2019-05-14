@@ -20,5 +20,6 @@
         <activity android:name=".slide.SlidingActivity" />
         <activity android:name=".drag.DragActivity" />
         <activity android:name=".select.SelectFileActivity" />
+        <activity android:name=".paint.PaintTextActivity" />
     </application>
 </manifest>
